@@ -1,0 +1,43 @@
+<div class = "newscheme">
+<%= link_to 'New Scheme', new_scheme_path %>
+
+<!-- This will be for users' saved schemes  -->
+</div>
+
+<h1>Listing schemes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Font1</th>
+      <th>Font2</th>
+      <th>Color1</th>
+      <th>Color2</th>
+      <th>Color3</th>
+      <th>Color4</th>
+      <th>Color5</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @schemes.each do |scheme| %>
+      <tr>
+        <td><%= scheme.font1 %></td>
+        <td><%= scheme.font2 %></td>
+        <td><%= scheme.color1 %></td>
+        <td><%= scheme.color2 %></td>
+        <td><%= scheme.color3 %></td>
+        <td><%= scheme.color4 %></td>
+        <td><%= scheme.color5 %></td>
+        <td><%= link_to 'Show', scheme %></td>
+        <td><%= link_to 'Edit', edit_scheme_path(scheme) %></td>
+        <td><%= link_to 'Destroy', scheme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

@@ -1,0 +1,44 @@
+<!-- <p id="notice"><%= notice %></p> -->
+  <% content_for(:head) do %>
+    <% @scheme.needed_google_fonts.each do |font| %>
+      <% font_url = "//fonts.googleapis.com/css?family=#{URI::escape(font)}" %>
+      <%= stylesheet_link_tag font_url %>
+    <% end %>
+  <% end %>
+
+<%= render 'form' %>
+
+      <div class = "container">
+        <h1 style= "font-family:  <%= @header_typeface = @scheme.font1 %>"><%= @header_typeface %></h1>
+        <br>
+        <p style= "font-family:  <%= @body_typeface = @scheme.font2 %>"><em><%= @body_typeface %></em> is the name of this body font. Hover over the circles below to display their hue, saturation, and lightness values. Not familiar with hsl? Learn more <a href="http://en.wikipedia.org/wiki/HSL_and_HSV">here!</a>.Ad eius viris neglegentur eam, ex eos albucius lobortis. Possim epicurei mnesarchum ne eos. Clita soleat prompta eum cu, vis ut epicuri intellegebat. Cu mea laudem aliquid. An eam hinc duis, ea volumus conceptam usu.</p>
+        <br> <br>
+      <section>
+        <div class="cont01">
+        <div id="c1" class="marge" style= "Background-color: hsl(<%= @scheme.color1 %>);" title="Stuff an things">
+          <small class="show-hsl"> hsl(<%= @scheme.color1 %>) </small>
+        </div>
+        <div id="c2" class="marge" style= "Background-color: hsl(<%= @scheme.color2 %>)">
+          <small class="show-hsl"> hsl(<%= @scheme.color2 %>) </small>
+        </div>
+        <div id="c3" class="marge" style= "Background-color: hsl(<%= @scheme.color3 %>)">
+          <small class="show-hsl"> hsl(<%= @scheme.color3 %>) </small>
+        </div>
+        <div id="c4" class="marge" style= "Background-color: hsl(<%= @scheme.color4 %>)">
+          <small class="show-hsl"> hsl(<%= @scheme.color4 %>) </small>
+        </div>
+        <div id="c5" class="marge" style= "Background-color: hsl(<%= @scheme.color5 %>)">
+          <small class="show-hsl"> hsl(<%= @scheme.color5 %>) </small>
+        </div>
+      </div>
+      </section>
+      </div>
+
+
+
+<!-- Restore links below when implementing users -->
+
+<!-- <div class='foot'>
+<%= link_to 'Edit', edit_scheme_path(@scheme) %> |
+<%= link_to 'Back', schemes_path %>
+</div> -->

@@ -1,0 +1,575 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+     /*    background-image: url("vw.jpg");
+     background-size: cover;*/
+
+     background-color: black;
+ }
+ header img {
+     padding-top: 20px;
+     margin-left: 40px;
+     text-align: left;
+     width: 190px;
+     z-index: 1000;
+ }
+ h1 {
+     font-size: 50px;
+     font-family: 'Helvetica';
+     color: white;
+     line-height: 1.5;
+ }
+ h3 {
+     letter-spacing: 1px;
+     font-size: 14px;
+     font-family: 'Helvetica';
+     color: rgb(235, 235, 235);
+ }
+ p {
+     font-size: 16px;
+     line-height: 1.5;
+     font-family: 'Georgia', serif;
+     color: rgb(200, 200, 200);
+     margin-top: -35px;
+ }
+ section {
+     text-align: right;
+ }
+ #c1 {
+     height: 40px;
+     width: 40px;
+     border-radius: 20px;
+     border: solid white 2px;
+     float: left;
+     cursor: hand;
+ }
+ #c2 {
+     height: 40px;
+     width: 40px;
+     border-radius: 20px;
+     border: solid white 2px;
+     float: left;
+     cursor: hand;
+ }
+ #c3 {
+     height: 40px;
+     width: 40px;
+     border-radius: 20px;
+     border: solid white 2px;
+     float: left;
+     cursor: hand;
+ }
+ #c4 {
+     height: 40px;
+     width: 40px;
+     border-radius: 20px;
+     border: solid white 2px;
+     float: left;
+     cursor: hand;
+ }
+ #c5 {
+     height: 40px;
+     width: 40px;
+     border-radius: 20px;
+     border: solid white 2px;
+     float: left;
+     cursor: hand;
+ }
+ .container {
+     padding-top: 100px;
+     width: 600px;
+     position: fixed;
+     margin-left: 430px;
+     float: right;
+ }
+ /*#c1:hover {
+     zoom:1.2;
+     transition: 1.2s;
+ }
+ #c2:hover  {
+     zoom:1.2;
+     transition: 1.2s;
+ }
+ #c3:hover {
+     zoom:1.2;
+     transition: 1.2s;
+ }
+ #c4:hover {
+     zoom:1.2;
+     transition: 1.2s;
+ }
+ #c5:hover {
+     zoom:1.2;
+     transition: 1.2s;
+ }*/
+
+ .form {
+     padding: 20px;
+     background-color: hsla(255, 0%, 100%, .1);
+     position: fixed;
+     margin-top: 85px;
+     margin-left: 35px;
+     float: left;
+ }
+ .newscheme a {
+     margin-top: -500px;
+ }
+ .button {
+     font-family: 'Helvetica', sans-serif;
+     font-size: 12px;
+     height: 50px;
+     width: 110px;
+     color: white;
+     padding: 5px;
+     background-color: rgba(204, 0, 0, 1);
+     border: none;
+     border-radius: 5px;
+     margin-left: 38px;
+ }
+ .button:hover {
+     color: white;
+     background-color: red;
+     border-bottom: 4px solid rgba(204, 0, 0, 1);
+ }
+ .button:focus {
+     color: white;
+     background-color: red;
+     border-bottom: 4px solid rgba(204, 0, 0, 1);
+ }
+ .button:active {
+     border: 2px solid rgba(204, 0, 0, .8);
+     border-bottom: none;
+ }
+ .foot {
+     padding-left: 55px;
+ }
+ .dropdown {
+     background: rgba(255, 255, 255, .5);
+     color: black;
+     width: 150px;
+ }
+ .show-hsl {
+     opacity: 0;
+     border-radius: 5px;
+     padding: 3px 6px;
+     color: white;
+     font-family: helvetica;
+     font-size: 11.5px;
+     font-weight: bold;
+     position: absolute;
+     margin: 50px 0 0 -75px;
+     transition: 0.8s;
+     white-space: nowrap;
+     overflow: hidden;
+     z-index: 10;
+ }
+ .small {
+     font-size: 15px;
+     opacity: 1;
+     margin-top: 50px;
+ }
+ .cont01 {
+     float: right;
+ }
+ .marge {
+     margin-right: 10px;
+ }
+ a {
+     text-decoration: none;
+     color: hsl(206, 40%, 48%);
+ }
+ /***************************************
+ MEDIA QUERY
+ *************************************/
+
+ @media (max-width: 700px) {
+     header img {
+         padding-top: 20px;
+         margin-left: 100px;
+         width: 200px;
+         z-index: 1000;
+     }
+     h1 {
+         font-size: 55px;
+         margin-top: 20px;
+         line-height: 40px;
+     }
+     .form {
+         position: relative;
+         width: 100%;
+         margin-top: 2em;
+         margin-left: 0;
+     }
+     .container {
+         clear: both;
+         width: 300px;
+         position: relative;
+         padding-top: 2em;
+         margin: 0 auto;
+         float: none;
+     }
+     .cont01 {
+         clear: both;
+     }
+     .dropdown {
+         background: rgba(0, 0, 0, 0);
+         color: white;
+         width: 85%;
+     }
+     .button {
+         width: 85%;
+         font-style: bold;
+         font-size: 2em;
+         margin: 0 auto;
+     }
+     p {
+         font-size: 20px;
+         line-height: 24px;
+         margin-top: -45;
+     }
+     h1 {
+         font-size: 4em;
+         font-family: 'Helvetica';
+         color: white;
+         line-height: 1.5;
+     }
+     h3 {
+         letter-spacing: 1px;
+         font-size: 14px;
+         font-family: 'Helvetica';
+         color: rgb(235, 235, 235);
+     }
+     small {
+         font-size: 16px;
+     }
+     #c1 {
+         height: 4.5em;
+         width: 4.5em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c2 {
+         height: 4.5em;
+         width: 4.5em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c3 {
+         height: 4.5em;
+         width: 4.5em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c4 {
+         height: 4.5em;
+         width: 4.5em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c5 {
+         height: 4.5em;
+         width: 4.5em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+
+     .cont01 {
+         float: left;
+         width: 300px;
+     }
+
+     .show-hsl {
+         opacity: 1;
+         margin-top: .8em;
+         margin-left: 1em;
+         vertical-align: center;
+         font-size: 1.7em;
+     }
+ }
+ @media screen and ( min-width: 768px) and ( max-width: 1280px) {
+     header img {
+         padding-top: 20px;
+       /*  margin-left: 100px;*/
+         width: 800px;
+         z-index: 1000;
+     }
+     h1 {
+         font-size: 55px;
+         margin-top: 20px;
+         line-height: 40px;
+     }
+     .form {
+         position: relative;
+         width: 100%;
+         margin-top: 2em;
+         margin-left: 0;
+     }
+     .container {
+         clear: both;
+         width: 80%;
+         position: relative;
+         padding-top: 2em;
+         margin: 0 auto;
+         float: none;
+             h1 {
+         font-size: 10em;
+         margin-top: 20px;
+         line-height: 100px;
+     }
+     }
+     .cont01 {
+         clear: both;
+     }
+     .dropdown {
+         background: rgba(0, 0, 0, 0);
+         color: white;
+         width: 85%;
+         height: 2em;
+         font-size: 4em;
+     }
+     .button {
+         width: 85%;
+         height: 4em;
+         font-style: bold;
+         font-size: 4em;
+         margin: 0 auto;
+         border-radius: 0;
+     }
+     p {
+         font-size: 20px;
+         line-height: 24px;
+         margin-top: -45;
+     }
+     h1 {
+         font-size: 4em;
+         font-family: 'Helvetica';
+         color: white;
+         line-height: 1.5;
+     }
+     h3 {
+         letter-spacing: 1px;
+         font-size: 4em;
+         font-family: 'Helvetica';
+         color: rgb(120, 120, 120);
+     }
+     #c1 {
+         height: 8em;
+         width: 8em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c2 {
+         height: 8em;
+         width: 8em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c3 {
+         height: 8em;
+         width: 8em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c4 {
+         height: 8em;
+         width: 8em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c5 {
+         height: 8em;
+         width: 8em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     .cont01 {
+         float: left;
+         width: 80%;
+     }
+     .show-hsl {
+         opacity: 1;
+         margin-left: 1em;
+         font-size: 4em;
+         padding-top: 0;
+         z-index: 10px;
+         overflow: visible;
+     }
+ }
+ @media screen and ( min-width: 320px) and ( max-width: 640px) {
+     header img {
+         padding-top: 20px;
+         margin-left: 100px;
+         width: 200px;
+         z-index: 1000;
+     }
+     h1 {
+         font-size: 55px;
+         margin-top: 20px;
+         line-height: 40px;
+     }
+     .form {
+         position: relative;
+         width: 100%;
+         margin-top: 2em;
+         margin-left: 0;
+     }
+     .container {
+         clear: both;
+         width: 80%;
+         position: relative;
+         padding-top: 2em;
+         margin: 0 auto;
+         float: none;
+     }
+     .cont01 {
+         clear: both;
+     }
+     .dropdown {
+         background: rgba(0, 0, 0, 0);
+         color: white;
+         width: 85%;
+     }
+     .button {
+         width: 85%;
+         font-style: bold;
+         font-size: 2em;
+         margin: 0 auto;
+         border-radius: 0;
+     }
+     p {
+         font-size: 20px;
+         line-height: 24px;
+         margin-top: -45;
+     }
+     h1 {
+         font-size: 4em;
+         font-family: 'Helvetica';
+         color: white;
+         line-height: 1.5;
+     }
+     h3 {
+         letter-spacing: 1px;
+         font-size: 14px;
+         font-family: 'Helvetica';
+         color: rgb(235, 235, 235);
+     }
+  /*   small {
+         font-size: 20px;
+     }*/
+     #c1 {
+         height: 8em;
+         width: 8em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c2 {
+         height: 8em;
+         width: 8em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c3 {
+         height: 8em;
+         width: 8em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c4 {
+         height: 8em;
+         width: 8em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     #c5 {
+         height: 8em;
+         width: 8em;
+         border-radius: 0px;
+         border: solid white 2px;
+         float: left;
+         clear: both;
+         left: 0;
+         cursor: hand;
+     }
+     .cont01 {
+         float: left;
+         width: 300px;
+     }
+     .show-hsl {
+     opacity: 1;
+     margin-left: 1em;
+     font-size: 4em;
+     padding-top: 0;
+     z-index: 10px;
+     overflow: visible;
+     }
+ }

@@ -1,0 +1,22 @@
+<div class="form">
+<%= form_for(Scheme.new) do |f| %>
+    <% if @scheme.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@scheme.errors.count, "error") %> prohibited this scheme from being saved:</h2>
+
+        <ul>
+        <% @scheme.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+<h3> Select Base Color </h3>
+   <%= f.select :base_color, options_for_select(Scheme.colors),  {}, class: 'dropdown' %> <br>
+<h3> Select Project Type </h3>
+    <%= f.select :project_type, options_for_select(Scheme.projects), {}, class: 'dropdown' %> <br>
+<h3> Select Palette Type </h3>
+    <%= f.select :palette_type, options_for_select(Scheme.palettes), {}, class: 'dropdown' %> <br> <br> <br>
+    <%= f.submit("Generate Scheme", class: 'button') %>
+  <% end %>
+</div>
